@@ -4,7 +4,7 @@ dist/
 # local tooling & sensitive files
 .claude/
 .vscode/
-*.pdf
+/*.pdf
 # generated types
 .astro/
 

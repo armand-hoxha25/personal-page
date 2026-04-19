@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Armand Hoxha — Resume</title>
+<style>
+  @page {
+    size: Letter;
+    margin: 0.35in 0.55in;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 9.5pt;
+    line-height: 1.25;
+    color: #1f2937;
+  }
+
+  .page {
+    max-width: 7.5in;
+    margin: 0 auto;
+  }
+
+  header.top {
+    text-align: center;
+    margin-bottom: 8px;
+  }
+
+  header.top h1 {
+    font-size: 20pt;
+    font-weight: 700;
+    margin: 0 0 1px 0;
+    color: #1d4ed8;
+    letter-spacing: 0.3px;
+  }
+
+  header.top .subtitle {
+    font-size: 10pt;
+    color: #374151;
+    margin: 0 0 2px 0;
+  }
+
+  header.top .links {
+    font-size: 10pt;
+  }
+
+  header.top .links a {
+    color: #1d4ed8;
+    text-decoration: underline;
+    margin: 0 4px;
+  }
+
+  h2.section {
+    font-size: 10pt;
+    color: #1d4ed8;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    margin: 9px 0 3px 0;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #93c5fd;
+  }
+
+  .role-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 5px;
+  }
+
+  .role-header .left {
+    font-weight: 600;
+  }
+
+  .role-header .company {
+    font-style: italic;
+    font-weight: 400;
+    color: #374151;
+  }
+
+  .role-header .dates {
+    font-size: 9.5pt;
+    color: #4b5563;
+    white-space: nowrap;
+  }
+
+  ul {
+    margin: 2px 0 0 0;
+    padding-left: 16px;
+  }
+
+  ul li {
+    margin-bottom: 1.5px;
+  }
+
+  .skills-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .skills-list li {
+    margin-bottom: 1.5px;
+  }
+
+  .skills-list .label {
+    font-weight: 600;
+  }
+
+  .about-line {
+    margin-top: 4px;
+  }
+
+  h2.section.inline-section {
+    display: inline-block;
+    margin-right: 8px;
+    border-bottom: none;
+    padding-bottom: 0;
+    vertical-align: middle;
+  }
+
+  .about-section {
+    margin-top: 9px;
+    padding-top: 3px;
+    border-top: 1px solid #93c5fd;
+    page-break-inside: avoid;
+  }
+
+  .about-section p {
+    display: inline;
+    margin: 0;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="top">
+    <h1>Armand Hoxha</h1>
+    <p class="subtitle">Machine Learning / AI Engineer</p>
+    <p class="links">
+      <a href="https://www.linkedin.com/in/armand-hoxha-4724514a">LinkedIn</a>
+      &nbsp;·&nbsp;
+      <a href="https://github.com/armand-hoxha25">GitHub</a>
+    </p>
+  </header>
+
+  <h2 class="section">Experience</h2>
+
+  <div class="role-header">
+    <div class="left"><strong>Senior Machine Learning Engineer</strong> &nbsp;|&nbsp; <span class="company">Extra Space Storage, Salt Lake City, UT (Remote)</span></div>
+    <div class="dates">Aug 2021 – Present</div>
+  </div>
+  <ul>
+    <li>Architected and deployed Agentic AI systems using LangGraph, enabling autonomous resolution of Tier-1 IT support tickets and automating complex data analysis workflows for internal stakeholders in Azure &amp; AWS using container orchestration (ECS).</li>
+    <li>Engineered a distributed pricing engine on Databricks, migrating legacy local-server logic to a scalable cluster environment; successfully managed pricing optimization for over 4,000 facilities with improved fault tolerance and processing speed.</li>
+    <li>Built a customer-facing conversational AI chatbot (LangChain + FastAPI) to drive the customer experience — providing real-time storage unit recommendations and intelligently routing calls, reducing escalation rate and improving self-service resolution.</li>
+    <li>Developed a RAG-powered internal knowledge chatbot using Pinecone vector store and LangGraph for orchestration, integrated with the Jira Service Desk API to surface company knowledge and automate internal ticket workflows.</li>
+    <li>Built an automated invoice categorization system using LLM-based classification and ML pipelines (Sklearn) to intelligently categorize expenses at scale, improving finance team efficiency and reducing manual review overhead.</li>
+    <li>Optimized churn forecasting models, achieving a 5% increase in accuracy by refining feature engineering pipelines and validation strategies, directly impacting revenue retention.</li>
+    <li>Built and maintained full-stack internal ML tools using FastAPI, Streamlit, and MLflow, creating intuitive interfaces for non-technical leadership to access real-time model inferences and pricing recommendations.</li>
+    <li>Designed and executed rigorous A/B testing frameworks to validate pricing algorithms, ensuring statistically significant revenue uplift and minimizing deployment risk.</li>
+    <li>Led technical initiatives to modernize team tooling, implementing standard CI/CD practices and containerized deployments to enhance developer productivity and system reliability.</li>
+  </ul>
+
+  <div class="role-header">
+    <div class="left"><strong>Full Stack Developer (Contract)</strong> &nbsp;|&nbsp; <span class="company">Neuromuscular Dynamics, Remote, CA</span></div>
+    <div class="dates">Oct 2022</div>
+  </div>
+  <ul>
+    <li>Front-end development using React for a customer-facing portal for clinical data collection and analytics.</li>
+    <li>Back-end development in Django, MongoDB, and PostgreSQL, deployed on Azure with CI/CD enabled.</li>
+  </ul>
+
+  <div class="role-header">
+    <div class="left"><strong>IoT &amp; Full Stack Data Scientist (Contract)</strong> &nbsp;|&nbsp; <span class="company">Motor Development Lab at USC, Remote, CA</span></div>
+    <div class="dates">Jun 2024</div>
+  </div>
+  <ul>
+    <li>Developed IoT device deployed on Raspberry Pi with facial recognition capabilities to detect and react to user activity in real time.</li>
+  </ul>
+
+  <div class="role-header">
+    <div class="left"><strong>Senior Research Biomedical Engineer</strong> &nbsp;|&nbsp; <span class="company">Kessler Foundation, West Orange, NJ</span></div>
+    <div class="dates">Dec 2015 – Aug 2021</div>
+  </div>
+  <ul>
+    <li>Led engineer across 4 research teams responsible for designing, evaluating neural experimentation, and data analysis pipelines for clinical publication (15+ publications &amp; conference presentations).</li>
+    <li>Designed and implemented novel real-time clinical data extraction pipelines for processing patient-relevant biosignals (EEG, fNIRS, MRI), applying advanced time-series analysis to surface actionable functional insights — directly analogous to production AI/ML pipelines that transform complex patient data into usable clinical intelligence.</li>
+    <li>Engineered automated feature extraction algorithms on Windows/Linux systems processing multi-modal neurological signals, translating raw biomedical data into structured, publication-ready metrics.</li>
+  </ul>
+
+  <h2 class="section">Education</h2>
+  <div class="role-header">
+    <div class="left"><strong>B.S. &amp; M.S., Biomedical Engineering</strong> &nbsp;–&nbsp; <span class="company">New Jersey Institute of Technology, Newark, NJ</span></div>
+    <div class="dates">Sep 2010 – Dec 2015</div>
+  </div>
+
+  <h2 class="section">Skills &amp; Tools</h2>
+  <ul class="skills-list">
+    <li><span class="label">Agentic / LLM:</span> LangGraph, LangChain, PromptFlow, Pinecone (RAG), OpenAI API</li>
+    <li><span class="label">ML / Data Science:</span> Spark, Sklearn, SkTime, MLflow, Jupyter Notebooks</li>
+    <li><span class="label">Deep Learning:</span> Keras, PyTorch</li>
+    <li><span class="label">Data Engineering:</span> Spark, SQL, MongoDB, Databricks</li>
+    <li><span class="label">Dev Languages:</span> Python, TypeScript, Bash / Shell scripting</li>
+    <li><span class="label">Web / API:</span> FastAPI, Streamlit, React, Django, HTMX</li>
+    <li><span class="label">DevOps / Infra:</span> Docker (ECS), CI/CD, Azure, AWS, Git / GitHub</li>
+    <li><span class="label">Languages:</span> English (native), Albanian (native), Italian (conversational)</li>
+  </ul>
+
+  <div class="about-section">
+    <h2 class="section inline-section">A Bit About Me:</h2>
+    <p>3D printing enthusiast · Published an indie game on Itch.io · Visited half of all U.S. National Parks</p>
+  </div>
+</div>
+</body>
+</html>

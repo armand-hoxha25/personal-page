@@ -1,4 +1,6 @@
 ---
+import { personal } from '../data/personal';
+
 const navLinks = [
   { label: 'About', href: '#about' },
   { label: 'Skills', href: '#skills' },
@@ -7,6 +9,8 @@ const navLinks = [
   { label: 'Publications', href: '#publications' },
   { label: 'Contact', href: '#contact' },
 ];
+
+const resumeHref = `${import.meta.env.BASE_URL}${personal.resumePath}`;
 ---
 
 <nav
@@ -29,6 +33,17 @@ const navLinks = [
           {link.label}
         </a>
       ))}
+      <a
+        href={resumeHref}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center gap-1.5 text-sm px-3 py-1.5 rounded-md border border-accent/40 text-accent hover:bg-accent/10 hover:border-accent transition-colors"
+      >
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3M4 6h16M4 18h16"/>
+        </svg>
+        Resume
+      </a>
     </div>
 
     <!-- Mobile hamburger -->
@@ -57,6 +72,17 @@ const navLinks = [
           {link.label}
         </a>
       ))}
+      <a
+        href={resumeHref}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="mobile-nav-link inline-flex items-center gap-2 text-lg px-4 py-2 rounded-md border border-accent/40 text-accent hover:bg-accent/10 hover:border-accent transition-colors"
+      >
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3M4 6h16M4 18h16"/>
+        </svg>
+        Resume
+      </a>
     </div>
   </div>
 </nav>

@@ -7,13 +7,16 @@ import { personal } from '../data/personal';
   <div class="mx-auto max-w-6xl px-6">
 
     <div class="grid md:grid-cols-5 gap-12 items-center">
-      <!-- Photo placeholder -->
+      <!-- Profile photo -->
       <div class="md:col-span-2 animate-on-scroll">
         <div class="relative mx-auto w-64 h-64 md:w-full md:h-80 rounded-2xl overflow-hidden">
-          <div class="absolute inset-0 bg-gradient-to-br from-accent/20 to-accent-secondary/20 flex items-center justify-center">
-            <span class="text-6xl font-bold text-accent/30 font-mono">AH</span>
-          </div>
-          <div class="absolute inset-0 border border-white/10 rounded-2xl"></div>
+          <img
+            src={`${import.meta.env.BASE_URL}profile.jpg`}
+            alt="Armand Hoxha"
+            class="w-full h-full object-cover"
+            loading="lazy"
+          />
+          <div class="absolute inset-0 border border-white/10 rounded-2xl pointer-events-none"></div>
         </div>
       </div>
 
