@@ -1,0 +1,28 @@
+---
+import SectionHeading from './ui/SectionHeading.astro';
+import { skillCategories } from '../data/skills';
+---
+
+<section id="skills" class="py-24">
+  <div class="mx-auto max-w-6xl px-6">
+    <SectionHeading label="Skills" title="Skills" />
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {skillCategories.map((category, i) => (
+        <div class={`animate-on-scroll delay-${Math.min(i + 1, 5)} glass rounded-xl p-6 border-l-2 border-accent/40 hover:border-accent transition-colors`}>
+          <div class="flex items-center gap-3 mb-4">
+            <span class="text-xl">{category.icon}</span>
+            <h3 class="font-semibold text-text-primary">{category.name}</h3>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            {category.skills.map((skill) => (
+              <span class="inline-block px-3 py-1 text-xs font-mono text-accent-light bg-accent/10 rounded-full border border-accent/20 hover:bg-accent/20 hover:scale-105 transition-all duration-200 cursor-default">
+                {skill}
+              </span>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

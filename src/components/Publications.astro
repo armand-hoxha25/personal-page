@@ -1,0 +1,51 @@
+---
+import SectionHeading from './ui/SectionHeading.astro';
+import { publications } from '../data/publications';
+---
+
+<section id="publications" class="py-24 bg-bg-secondary/50">
+  <div class="mx-auto max-w-6xl px-6">
+    <SectionHeading label="Publications" title="Research & Papers" />
+
+    <div class="max-w-3xl mx-auto space-y-4">
+      {publications.map((pub, i) => (
+        <div class={`animate-on-scroll delay-${Math.min(i + 1, 5)} glass rounded-xl p-5 hover:border-accent/20 transition-colors`}>
+          <h3 class="font-medium text-text-primary mb-1 leading-snug">
+            {pub.title}
+          </h3>
+          <p class="text-sm text-text-secondary mb-1">{pub.authors}</p>
+          <div class="flex items-center gap-3 text-sm">
+            <span class="text-accent-secondary font-mono">{pub.journal}</span>
+            <span class="text-text-secondary">&middot;</span>
+            <span class="text-text-secondary">{pub.year}</span>
+            {pub.doi && (
+              <a
+                href={`https://doi.org/${pub.doi}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-accent hover:text-accent-light transition-colors"
+              >
+                DOI ↗
+              </a>
+            )}
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <div class="text-center mt-8">
+      <p class="text-text-secondary text-sm mb-3">
+        Showing {publications.length} of 15+ publications
+      </p>
+      <a
+        href="#"
+        class="inline-flex items-center gap-2 text-accent hover:text-accent-light transition-colors font-medium"
+      >
+        View all on Google Scholar
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
